@@ -26,7 +26,7 @@ const handleSignIn = (req, res, db, bcrypt) => {
     // mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
 
     if (!valid_password.test(String(password))) {
-        console.log("I waz ere");
+        
         return res.status(400).json('Wrong Password Format Entered')
     };
 
